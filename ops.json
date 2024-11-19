@@ -1,0 +1,20 @@
+[
+  {
+    "uuid": "3c19bf6c-fe27-452b-948d-39cbd0f710bd",
+    "name": "CobbleStun",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "3aa87230-ed2e-4e59-af67-0b6efa0d5aa7",
+    "name": "Sgoc",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "3a7f01b9-6446-45c4-8b39-9fab55b995e9",
+    "name": "Vrdko",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

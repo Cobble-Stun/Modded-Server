@@ -1,0 +1,360 @@
+# ExtraGore Particle Group Configuration
+# ------------------------------------------------------
+# This file enables the creation of custom blood particle properties for various entities.
+# Begin by uniquely naming each property group to effectively manage different settings.
+
+# Particle Behavior Options:
+# - Bounce: The particle will bounce off surfaces like a solid object.
+# - Stick: The particle will stick to walls and other surfaces.
+# - Magic: Some particles will fall to the ground while the majority will fly up to the sky.
+# - None: The particle won't have any special effects.
+
+# Particle Weight Options:
+# - Heavy: The particle will sink to the bottom when it's underwater.
+# - Light: The particle will float up to the top of the water.
+
+# Particle State Options:
+# - Liquid: The particle will get larger during its lifetime.
+# - Solid: The particle will remain the same size all the time.
+
+# Color Settings:
+# Set an RGB color value to visually distinguish particles for various entities.
+
+# How to Use:
+# 1. Define a group with a name, including behavior, weight, state, color and entity values.
+# 2. Example:
+#    ["Color Group Name"]
+#    behavior = Choose from "Stuck", "Bounce" or "None"
+#    weight = Choose from "Heavy" or "Light"
+#    state = Choose from "Liquid" or "Solid"
+#    color = "R,G,B"
+#    entities = ["entityID1", "entityID2"]
+# 3. You can modify or delete any predefined groups, except for the red group. The red group is non editable and serves only to show you unused entities which are compatible with different color groups.
+# 4. Add your custom color groups under an already predefined group, except for the red one.
+# 5. Ensure each color group has a unique name and is properly structured.
+
+# Note: Incorrectly formatted lines or unrecognized entity IDs will be ignored.
+# ------------------------------------------------------
+
+["Violet Group"]
+behavior = "Magic"
+weight = "Light"
+state = "Liquid"
+color = "128,0,128"
+entities = ["minecraft:enderman", "minecraft:endermite", "minecraft:phantom", "minecraft:shulker", "minecraft:silverfish", "minecraft:warden", "minecraft:ender_dragon"]
+
+["White Group"]
+behavior = "Bounce"
+weight = "Heavy"
+state = "Solid"
+color = "255,255,255"
+entities = ["minecraft:skeleton", "minecraft:ghast", "minecraft:iron_golem", "minecraft:skeleton_horse", "minecraft:snow_golem", "minecraft:stray", "minecraft:vex", "minecraft:wither_skeleton", "minecraft:allay", "minecraft:wither"]
+
+["Green Group"]
+behavior = "Stuck"
+weight = "Light"
+state = "Liquid"
+color = "0,255,0"
+entities = ["minecraft:cave_spider", "minecraft:creeper", "minecraft:slime", "minecraft:spider", "minecraft:witch"]
+
+["Yellow Group"]
+behavior = "Bounce"
+weight = "Heavy"
+state = "Solid"
+color = "255,255,0"
+entities = ["minecraft:blaze", "minecraft:magma_cube", "minecraft:strider"]
+
+["Blue Group"]
+behavior = "None"
+weight = "Light"
+state = "Liquid"
+color = "0,0,255"
+entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian", "minecraft:glow_squid"]
+
+# Auto generated red color group - do not edit. Use this as reference for unused entity IDs.
+"255,0,0" = [
+    "born_in_chaos_v1:mother_spider",
+    "alexsmobs:snow_leopard",
+    "born_in_chaos_v1:siamese_skeletonsleft",
+    "alexsmobs:seal",
+    "born_in_chaos_v1:siamese_skeletonsright",
+    "alexsmobs:roadrunner",
+    "alexsmobs:laviathan",
+    "minecraft:trader_llama",
+    "gore:zombiewithoutarms",
+    "alexsmobs:endergrade",
+    "minecraft:horse",
+    "born_in_chaos_v1:lifestealer",
+    "scguns:hive",
+    "born_in_chaos_v1:riding_felsteed",
+    "born_in_chaos_v1:pumpkin_bomb",
+    "minecraft:llama",
+    "alexsmobs:maned_wolf",
+    "born_in_chaos_v1:skeleton_demoman",
+    "alexsmobs:skreecher",
+    "minecraft:tadpole",
+    "minecraft:dolphin",
+    "born_in_chaos_v1:supreme_bonescaller",
+    "alexsmobs:gelada_monkey",
+    "born_in_chaos_v1:pumpkin_bruiser",
+    "gore:zombie_without_head_and_arm",
+    "alexsmobs:hammerhead_shark",
+    "alexsmobs:dropbear",
+    "alexsmobs:tiger",
+    "alexsmobs:grizzly_bear",
+    "alexsmobs:murmur_head",
+    "gore:cutted_vertical_zombie",
+    "gore:husk_without_arms",
+    "minecraft:bee",
+    "alexsmobs:devils_hole_pupfish",
+    "minecraft:illusioner",
+    "gore:hello_kid",
+    "born_in_chaos_v1:dread_hound",
+    "born_in_chaos_v1:skeleton_thrasher_not_despawn",
+    "born_in_chaos_v1:baby_spider",
+    "minecraft:mooshroom",
+    "alexsmobs:bison",
+    "born_in_chaos_v1:seared_spirit_not_despawn",
+    "minecraft:drowned",
+    "born_in_chaos_v1:bone_imp_minion",
+    "minecraft:axolotl",
+    "born_in_chaos_v1:pumpkin_dunce",
+    "alexsmobs:gorilla",
+    "gore:zombie_without_head",
+    "alexsmobs:tusklin",
+    "born_in_chaos_v1:senor_pumpkin",
+    "born_in_chaos_v1:mrs_pumpkin",
+    "alexsmobs:cosmic_cod",
+    "alexsmobs:underminer",
+    "minecraft:wandering_trader",
+    "born_in_chaos_v1:glutton_fish",
+    "deeperdarker:angler_fish",
+    "alexsmobs:kangaroo",
+    "born_in_chaos_v1:corpse_fish",
+    "born_in_chaos_v1:supreme_bonescaller_stage_2",
+    "scguns:zombified_hornlin",
+    "scguns:blunderer",
+    "alexsmobs:hummingbird",
+    "gore:multiple_cuts_husk",
+    "alexsmobs:crow",
+    "alexsmobs:guster",
+    "minecraft:pufferfish",
+    "born_in_chaos_v1:bone_imp",
+    "minecraft:fox",
+    "born_in_chaos_v1:nightmare_stalker",
+    "born_in_chaos_v1:firelight",
+    "alexsmobs:warped_toad",
+    "minecraft:chicken",
+    "alexsmobs:giant_squid",
+    "born_in_chaos_v1:mr_pumpkin_controlled",
+    "minecraft:zombie",
+    "gore:experiment_i",
+    "alexsmobs:emu",
+    "alexsmobs:cockroach",
+    "born_in_chaos_v1:siamese_skeletons",
+    "born_in_chaos_v1:lord_pumpkinhead",
+    "scguns:swarm",
+    "born_in_chaos_v1:zombie_lumberjack",
+    "gore:squitchgun_flame_fire",
+    "alexsmobs:flutter",
+    "minecraft:hoglin",
+    "born_in_chaos_v1:lords_felsteed",
+    "gore:husk_without_legs_and_arm",
+    "alexsmobs:capuchin_monkey",
+    "minecraft:polar_bear",
+    "minecraft:zombified_piglin",
+    "minecraft:turtle",
+    "minecraft:sheep",
+    "born_in_chaos_v1:lord_pumpkinhead_head",
+    "alexsmobs:rattlesnake",
+    "born_in_chaos_v1:zombie_fisherman",
+    "born_in_chaos_v1:lord_pumpkinhead_withouta_horse",
+    "alexsmobs:bone_serpent_part",
+    "born_in_chaos_v1:controlled_baby_skeleton",
+    "alexsmobs:raccoon",
+    "born_in_chaos_v1:fallen_chaos_knight",
+    "deeperdarker:sculk_leech",
+    "minecraft:ravager",
+    "alexsmobs:bone_serpent",
+    "alexsmobs:potoo",
+    "alexsmobs:fly",
+    "gore:warden_death",
+    "alexsmobs:straddler",
+    "born_in_chaos_v1:door_knight_not_despawn",
+    "deeperdarker:sludge",
+    "alexsmobs:sea_bear",
+    "born_in_chaos_v1:spirit_guide",
+    "born_in_chaos_v1:dread_hound_not_despawn",
+    "born_in_chaos_v1:riding_lords_felsteed",
+    "alexsmobs:mudskipper",
+    "born_in_chaos_v1:zombie_clown_not_despawn",
+    "alexsmobs:sugar_glider",
+    "alexsmobs:crimson_mosquito",
+    "alexsmobs:orca",
+    "gore:zombie_without_mouth_and_arms",
+    "born_in_chaos_v1:spiritof_chaos",
+    "born_in_chaos_v1:sir_pumpkinhead",
+    "gore:husk_without_mouth_and_arm",
+    "alexsmobs:jerboa",
+    "minecraft:bat",
+    "alexsmobs:cosmaw",
+    "born_in_chaos_v1:bloody_gadfly",
+    "alexsmobs:comb_jelly",
+    "born_in_chaos_v1:skeleton_thrasher",
+    "born_in_chaos_v1:decrepit_skeleton",
+    "born_in_chaos_v1:controlled_spiritual_assistant",
+    "born_in_chaos_v1:bonescaller_not_despawn",
+    "gore:husk_without_legs",
+    "alexsmobs:skunk",
+    "alexsmobs:enderiophage",
+    "born_in_chaos_v1:baby_skeleton",
+    "alexsmobs:sunbird",
+    "born_in_chaos_v1:lifestealer_true_form",
+    "alexsmobs:tasmanian_devil",
+    "gore:husk_without_mouth_and_arms",
+    "born_in_chaos_v1:thornshell_crab",
+    "gore:zombie_without_mouth",
+    "scguns:dissident",
+    "minecraft:cat",
+    "alexsmobs:stradpole",
+    "minecraft:tropical_fish",
+    "minecraft:panda",
+    "minecraft:zombie_villager",
+    "gore:dismembered_spider_1",
+    "born_in_chaos_v1:dire_hound_leader",
+    "alexsmobs:froststalker",
+    "gore:dismembered_spider_2",
+    "minecraft:giant",
+    "gore:multiple_cuts_zombie",
+    "alexsmobs:lobster",
+    "alexsmobs:seagull",
+    "alexsmobs:moose",
+    "alexsmobs:shoebill",
+    "alexsmobs:farseer",
+    "scguns:cog_knight",
+    "born_in_chaos_v1:maggot",
+    "alexsmobs:warped_mosco",
+    "gore:dismembered_spider_3",
+    "minecraft:husk",
+    "born_in_chaos_v1:firelight_not_despawn",
+    "born_in_chaos_v1:baby_spider_controlled",
+    "gore:zombie_without_mouth_and_arm",
+    "born_in_chaos_v1:door_knight",
+    "scguns:hornlin",
+    "alexsmobs:komodo_dragon",
+    "deeperdarker:sculk_centipede",
+    "minecraft:donkey",
+    "born_in_chaos_v1:felsteed",
+    "born_in_chaos_v1:spirit_guide_assistant",
+    "born_in_chaos_v1:baby_skeleton_minion",
+    "gore:husk_without_head_and_arm",
+    "minecraft:piglin_brute",
+    "alexsmobs:crocodile",
+    "deeperdarker:stalker",
+    "alexsmobs:triops",
+    "alexsmobs:rhinoceros",
+    "alexsmobs:frilled_shark",
+    "born_in_chaos_v1:pumpkin_spirit",
+    "alexsmobs:bald_eagle",
+    "gore:horizontal_cutted_spider",
+    "born_in_chaos_v1:mr_pumpkin",
+    "alexsmobs:blobfish",
+    "born_in_chaos_v1:infernal_spirit",
+    "alexsmobs:mimicube",
+    "born_in_chaos_v1:phantom_creeper",
+    "alexsmobs:void_worm",
+    "born_in_chaos_v1:sir_pumpkinhead_without_horse",
+    "minecraft:parrot",
+    "scguns:redcoat",
+    "alexsmobs:centipede_head",
+    "minecraft:frog",
+    "alexsmobs:banana_slug",
+    "alexsmobs:mimic_octopus",
+    "alexsmobs:bunfungus",
+    "alexsmobs:void_worm_part",
+    "gore:zombie_without_legs",
+    "gore:wither_skeleton_condemned",
+    "minecraft:mule",
+    "minecraft:vindicator",
+    "alexsmobs:flying_fish",
+    "minecraft:evoker",
+    "born_in_chaos_v1:barrel_zombie",
+    "scguns:supply_scamp",
+    "alexsmobs:tarantula_hawk",
+    "alexsmobs:cachalot_whale",
+    "born_in_chaos_v1:decaying_zombie",
+    "born_in_chaos_v1:corpse_fly",
+    "gore:experiment_iv",
+    "gore:zombie_without_legs_and_arm",
+    "gore:experiment_iii",
+    "alexsmobs:terrapin",
+    "alexsmobs:anaconda",
+    "gore:flesh_demon",
+    "born_in_chaos_v1:phantom_bomb_entity",
+    "minecraft:pig",
+    "born_in_chaos_v1:restless_spirit",
+    "alexsmobs:alligator_snapping_turtle",
+    "born_in_chaos_v1:swarmer",
+    "minecraft:goat",
+    "minecraft:cod",
+    "alexsmobs:mantis_shrimp",
+    "gore:experiment_iv_i",
+    "alexsmobs:platypus",
+    "born_in_chaos_v1:pumpkinhead",
+    "scguns:cog_minion",
+    "gore:hlvrek",
+    "minecraft:cow",
+    "alexsmobs:rocky_roller",
+    "born_in_chaos_v1:scarlet_persecutor",
+    "born_in_chaos_v1:phantom_creeper_copy",
+    "alexsmobs:soul_vulture",
+    "gore:zombie_on_burn",
+    "alexsmobs:blue_jay",
+    "alexsmobs:toucan",
+    "minecraft:salmon",
+    "born_in_chaos_v1:seared_spirit",
+    "gore:vertical_cutted_spider",
+    "born_in_chaos_v1:dark_vortex",
+    "alexsmobs:anteater",
+    "alexsmobs:rain_frog",
+    "gore:cutted_vertical_husk",
+    "born_in_chaos_v1:zombie_clown",
+    "minecraft:rabbit",
+    "minecraft:pillager",
+    "alexsmobs:murmur",
+    "born_in_chaos_v1:decaying_zombie_not_despawn",
+    "minecraft:zoglin",
+    "gore:husk_without_head",
+    "born_in_chaos_v1:zombie_bruiser",
+    "gore:the_executioner",
+    "alexsmobs:leafcutter_ant",
+    "born_in_chaos_v1:lord_the_headless",
+    "scguns:sky_carrier",
+    "born_in_chaos_v1:diamond_termite",
+    "alexsmobs:mungus",
+    "alexsmobs:caiman",
+    "alexsmobs:spectre",
+    "alexsmobs:catfish",
+    "minecraft:piglin",
+    "deeperdarker:shriek_worm",
+    "alexsmobs:skelewag",
+    "born_in_chaos_v1:sir_the_headless",
+    "alexsmobs:elephant",
+    "alexsmobs:gazelle",
+    "gore:cutted_horizonal_zombie",
+    "minecraft:sniffer",
+    "gore:husk_without_mouth",
+    "minecraft:zombie_horse",
+    "gore:cutted_horizontal_husk",
+    "minecraft:camel",
+    "gore:old_wither_skeleton_condemned",
+    "gore:without_head_spider",
+    "born_in_chaos_v1:bonescaller",
+    "gore:akeriskull_entity",
+    "deeperdarker:shattered",
+    "born_in_chaos_v1:missioner",
+    "deeperdarker:sculk_snapper",
+    "minecraft:ocelot",
+    "born_in_chaos_v1:supreme_bonescaller_not_despawn",
+    "minecraft:wolf"
+]
